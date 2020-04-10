@@ -19,7 +19,7 @@ use Faecie\Dominos\Service\GameStatusReader\PlayerDrawsTileStatusReader;
 use Faecie\Dominos\Service\GameStatusReader\PlayerMissedRoundStatusReader;
 use Faecie\Dominos\Service\GameStatusReader\PlayerPutTileStatusReader;
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 $gameStock = new ClassicDominoStock(new RandomizedStock());
 

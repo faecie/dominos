@@ -16,11 +16,6 @@ use Faecie\Dominos\Enum\PlayerStatusesEnum;
 use Faecie\Dominos\Service\FirstMatchingTileStrategy;
 use Faecie\Dominos\Service\GameLogger;
 use Faecie\Dominos\Service\GameStatusReader\GameEndedStatusReader;
-use Faecie\Dominos\Service\GameStatusReader\GamePlayedStatusReader;
-use Faecie\Dominos\Service\GameStatusReader\GameStartedStatusReader;
-use Faecie\Dominos\Service\GameStatusReader\PlayerDrawsTileStatusReader;
-use Faecie\Dominos\Service\GameStatusReader\PlayerMissedRoundStatusReader;
-use Faecie\Dominos\Service\GameStatusReader\PlayerPutTileStatusReader;
 use Faecie\Dominos\ValueObject\Tile;
 use PHPUnit\Framework\TestCase;
 
@@ -55,9 +50,9 @@ class ClassicGamePlayTest extends TestCase
     public function testGameEndsWithNoWinners(): void
     {
         $stock1 = new RandomizedStock();
-        $stock1->putTile(new Tile(1,2));
+        $stock1->putTile(new Tile(1, 2));
         $stock2 = new RandomizedStock();
-        $stock2->putTile(new Tile(3,4));
+        $stock2->putTile(new Tile(3, 4));
         $player1 = new SimplePlayer('Test1', $stock1, new FirstMatchingTileStrategy());
         $player2 = new SimplePlayer('Test2', $stock2, new FirstMatchingTileStrategy());
 
@@ -81,9 +76,9 @@ class ClassicGamePlayTest extends TestCase
     public function testGameEndsWithWinner(): void
     {
         $stock1 = new RandomizedStock();
-        $stock1->putTile(new Tile(1,2));
+        $stock1->putTile(new Tile(1, 2));
         $stock2 = new RandomizedStock();
-        $stock2->putTile(new Tile(3,4));
+        $stock2->putTile(new Tile(3, 4));
         $player1 = new SimplePlayer('Test1', $stock1, new FirstMatchingTileStrategy());
         $player2 = new SimplePlayer('Test2', $stock2, new FirstMatchingTileStrategy());
 
@@ -106,14 +101,14 @@ class ClassicGamePlayTest extends TestCase
     public function testRightOutcomeOfGame(): void
     {
         $gameStock = new RandomizedStock();
-        $gameStock->putTile(new Tile(2,6));
+        $gameStock->putTile(new Tile(2, 6));
 
         $stock1 = new RandomizedStock();
-        $stock1->putTile(new Tile(4,2));
-        $stock1->putTile(new Tile(6,6));
+        $stock1->putTile(new Tile(4, 2));
+        $stock1->putTile(new Tile(6, 6));
         $stock2 = new RandomizedStock();
-        $stock2->putTile(new Tile(3,5));
-        $stock2->putTile(new Tile(1,1));
+        $stock2->putTile(new Tile(3, 5));
+        $stock2->putTile(new Tile(1, 1));
 
         $player1 = new SimplePlayer('Test1', $stock1, new FirstMatchingTileStrategy());
         $player2 = new SimplePlayer('Test2', $stock2, new FirstMatchingTileStrategy());
