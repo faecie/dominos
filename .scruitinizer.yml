@@ -26,8 +26,7 @@ build_failure_conditions:
 
 filter:
   excluded_paths:
-    - ".idea/"
     - "public/"
     - "resource/"
     - "tests/"
-    - "tests/"
+    - "scripts/"
