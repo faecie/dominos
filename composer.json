@@ -1,0 +1,29 @@
+{
+  "name": "faecie/dominos",
+  "description": "Dominos game",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ruslan",
+      "email": "umyarovrr@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Faecie\\Dominos\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Faecie\\Dominos\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.2@dev"
+  }
+}
