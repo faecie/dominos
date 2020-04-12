@@ -1,7 +1,6 @@
 # Dominoes Game
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/faecie/dominos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/faecie/dominos/?branch=master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/faecie/dominos/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Build Status](https://scrutinizer-ci.com/g/faecie/dominos/badges/build.png?b=master)](https://scrutinizer-ci.com/g/faecie/dominos/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/faecie/dominos/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/faecie/dominos/?branch=master)
 
@@ -20,23 +19,16 @@ until they can
 follow the rules above
 
 ## Quick start
-1. To see how this programm is working firstly you need to download it.
-    if you have Git - you can just clone it:
-
-    `git clone git@github.com:faecie/dominos.git`
-
-    If not you need to download and unpack it 
-
-    `https://github.com/faecie/dominos/archive/master.zip`
-2. This program needs either PHP 7.4 with Composer or Docker to be installed on your local machine to run the game. 
-If you have it then just go to the project folder and execute a helper make command:
-
-    `make run`
-
-    It will either install composer dependencies and run program on your local machine or build a Docker image and execute
-    the program inside a container.  It will also remove the image and container afterwards
+1. Download the [project](https://github.com/faecie/dominos/archive/master.zip). Or clone the repository:
+    ```
+    git clone git@github.com:faecie/dominos.git
+    ```
     
-    Sorry to say - there is no other way around. Install Docker or PHP 7.4 with Composer and run make comand
+2. To run the game execute the command inside of the project's folder:
+    ```
+   make run
+   ```
+    :exclamation: Requires either PHP 7.4 with Composer or [Docker](https://docs.docker.com/get-docker/)
 
 ## Implementation:
 
