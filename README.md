@@ -32,5 +32,5 @@ follow the rules above
 
 ## Implementation:
 
-The initial "white boarding" of a problem available as photos in the [resource](../blob/master/resource/) folder
+The initial "white boarding" of a problem available as photos in the [resource](../master/resource/) folder
 
