@@ -18,7 +18,7 @@ class ClassicGame implements DominoGame
     /**
      * @var PlayersQueue|DominoPlayer[] Players playing this game
      */
-    private $players;
+    private PlayersQueue $players;
 
     private TileStock $stock;
     private Board $board;
